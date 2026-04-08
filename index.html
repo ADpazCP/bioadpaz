@@ -6,10 +6,9 @@
     <title>Nossa História | ADpaz</title>
     <style>
         :root { 
-            /* Cores Suavizadas */
-            --primary-light: #e0e5b6; /* Dourado areia suave */
-            --accent: #a3b18a; /* Verde oliva acinzentado */
-            --white-soft: #f8f9fa; /* Branco off-white */
+            --primary-light: #e0e5b6; 
+            --accent: #a3b18a; 
+            --white-soft: #f8f9fa; 
             --text-shadow: rgba(0, 0, 0, 0.4);
         }
 
@@ -19,10 +18,9 @@
             width: 100%;
             height: 100%;
             font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-            background-color: #2f3e46; /* Fundo base mais neutro */
+            background-color: #2f3e46;
         }
 
-        /* --- FUNDO COM CAMADA DE SUAVIZAÇÃO --- */
         .hero-background {
             position: fixed;
             top: 0; left: 0; width: 100%; height: 100%;
@@ -32,7 +30,6 @@
             z-index: -1;
         }
 
-        /* --- OVERLAY MAIS LEVE E MENOS VERDE --- */
         .content-container {
             position: relative;
             z-index: 1;
@@ -41,9 +38,8 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 50px 25px;
+            padding: 40px 25px; /* Reduzi levemente o padding superior */
             box-sizing: border-box;
-            /* Gradiente suave para tirar o peso do verde escuro */
             background: linear-gradient(135deg, rgba(47, 62, 70, 0.85), rgba(20, 33, 41, 0.9));
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
@@ -51,7 +47,7 @@
 
         .logo {
             width: 95px;
-            margin-bottom: 35px;
+            margin-bottom: 30px;
             filter: drop-shadow(0 8px 20px rgba(0,0,0,0.3));
             animation: fadeIn 1.5s ease;
         }
@@ -70,51 +66,50 @@
             color: var(--white-soft);
             text-transform: uppercase;
             letter-spacing: 3px;
-            padding-bottom: 15px;
-            margin-bottom: 35px;
+            padding-bottom: 12px;
+            margin-bottom: 25px; /* Aproximado do texto */
             border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-            font-weight: 300; /* Título mais fino e elegante */
+            font-weight: 300;
         }
 
         .texto-relato p {
             font-size: 1.08rem;
-            line-height: 1.85;
-            margin-bottom: 22px;
+            line-height: 1.5; /* Linhas mais próximas */
+            margin-bottom: 15px; /* Parágrafos mais próximos */
             text-align: justify;
             font-weight: 300;
             letter-spacing: 0.3px;
         }
 
         .destaque {
-            color: var(--primary-light); /* Cor de fonte nova */
+            color: var(--primary-light);
             font-weight: 600;
         }
 
+        /* --- RODAPÉ DIMINUÍDO --- */
         .footer-info {
-            margin-top: 50px;
-            padding: 25px;
-            border-radius: 20px;
+            margin-top: 30px; /* Menos espaço acima */
+            padding: 12px; /* Altura do modal reduzida */
+            border-radius: 15px;
             background: rgba(255, 255, 255, 0.03);
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             text-align: center;
-            line-height: 1.6;
+            line-height: 1.4;
             border: 1px solid rgba(255, 255, 255, 0.08);
             color: var(--accent);
         }
 
-        /* ANIMAÇÕES */
         @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
         @keyframes fadeInUp { 
             from { opacity: 0; transform: translateY(30px); } 
             to { opacity: 1; transform: translateY(0); } 
         }
 
-        /* AJUSTES MOBILE */
         @media (max-width: 480px) {
             .logo { width: 80px; }
             h2 { font-size: 1.3rem; letter-spacing: 2px; }
             .texto-relato p { font-size: 1rem; text-align: left; }
-            .content-container { padding: 40px 22px; }
+            .content-container { padding: 30px 22px; }
         }
     </style>
 </head>
@@ -133,14 +128,13 @@
                 
                 <p>Com aproximadamente 30 congregações, a igreja vem desenvolvendo um relevante trabalho evangelístico no estado do <span class="destaque">Rio Grande do Norte</span> e em diversas cidades da <span class="destaque">Paraíba</span>.</p>
                 
-                <p>Hoje, seu principal compromisso é<span class="destaque">ganhar almas para o sr. Jesus, </span>, fazendo com que o evangelho alcance o maior número de pessoas, promovendo cura, a paz e libertação.</p>
+                <p>Hoje, seu principal compromisso é <span class="destaque">ganhar almas para o sr. Jesus</span>, fazendo com que o evangelho alcance o maior número de pessoas, promovendo cura, a paz e libertação.</p>
                 
                 <p>Este ministério tem como presidente, o <span class="destaque">Pastor Eliseu Moreira Silva</span>, cuja dedicação tem sido instrumento nas mãos de Deus para o avanço da obra.</p>
 
                 <div class="footer-info">
                     <strong>Sede Administrativa</strong><br>
-                    Av. Jerônimo Câmara, 1368, Lagoa Nova<br>
-                    Natal/RN - CEP 59052-700
+                    Av. Jerônimo Câmara, 1368, Lagoa Nova, Natal/RN
                 </div>
             </div>
         </div>
