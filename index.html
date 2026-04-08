@@ -38,7 +38,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 40px 25px; /* Reduzi levemente o padding superior */
+            padding: 40px 25px;
             box-sizing: border-box;
             background: linear-gradient(135deg, rgba(47, 62, 70, 0.85), rgba(20, 33, 41, 0.9));
             backdrop-filter: blur(12px);
@@ -67,16 +67,19 @@
             text-transform: uppercase;
             letter-spacing: 3px;
             padding-bottom: 12px;
-            margin-bottom: 25px; /* Aproximado do texto */
+            margin-bottom: 25px;
             border-bottom: 1px solid rgba(255, 255, 255, 0.2);
             font-weight: 300;
         }
 
         .texto-relato p {
             font-size: 1.08rem;
-            line-height: 1.5; /* Linhas mais próximas */
-            margin-bottom: 15px; /* Parágrafos mais próximos */
+            line-height: 1.5;
+            margin-bottom: 15px;
+            /* Justificativa Reforçada */
             text-align: justify;
+            hyphens: auto; /* Permite quebra de palavras para evitar espaços grandes */
+            -webkit-hyphens: auto;
             font-weight: 300;
             letter-spacing: 0.3px;
         }
@@ -86,10 +89,9 @@
             font-weight: 600;
         }
 
-        /* --- RODAPÉ DIMINUÍDO --- */
         .footer-info {
-            margin-top: 30px; /* Menos espaço acima */
-            padding: 12px; /* Altura do modal reduzida */
+            margin-top: 30px;
+            padding: 12px;
             border-radius: 15px;
             background: rgba(255, 255, 255, 0.03);
             font-size: 0.85rem;
@@ -108,7 +110,7 @@
         @media (max-width: 480px) {
             .logo { width: 80px; }
             h2 { font-size: 1.3rem; letter-spacing: 2px; }
-            .texto-relato p { font-size: 1rem; text-align: left; }
+            /* Removi a regra que forçava alinhamento à esquerda no mobile */
             .content-container { padding: 30px 22px; }
         }
     </style>
@@ -130,12 +132,12 @@
                 
                 <p>Hoje, seu principal compromisso é <span class="destaque">ganhar almas para o sr. Jesus</span>, fazendo com que o evangelho alcance o maior número de pessoas, promovendo cura, a paz e libertação.</p>
                 
-                <p>Este ministério tem como presidente, o <span class="destaque">Pastor Eliseu Moreira Silva</span>, que com muita dedicação tem sido instrumento nas mãos de Deus para o avanço desta obra e ´com muita sensibilidade espiritual, tem abraçado esta peleja ao lado dos seus liderados, 
-                    impactando vidas para o Reino celestial.</p>
+                <p>Este ministério tem como presidente o <span class="destaque">Pastor Eliseu Moreira Silva</span>, que com muita dedicação tem sido instrumento nas mãos de Deus para o avanço desta obra e, com muita sensibilidade espiritual, tem abraçado esta peleja ao lado dos seus liderados, impactando vidas para o Reino celestial.</p>
 
                 <div class="footer-info">
                     <strong>Sede Administrativa</strong><br>
-                    Av. Jerônimo Câmara, 1368, Lagoa Nova</br>Natal/RN - CEP 59.052-700
+                    Av. Jerônimo Câmara, 1368, Lagoa Nova<br>
+                    Natal/RN - CEP 59.052-700
                 </div>
             </div>
         </div>
