@@ -21,7 +21,7 @@
             padding: 0;
             background-color: var(--white);
             color: var(--text-dark);
-            line-height: 1.6;
+            line-height: 1.5;
             display: flex;
             flex-direction: column;
             min-height: 100vh;
@@ -31,7 +31,7 @@
         header {
             background-color: var(--primary-green);
             color: var(--white);
-            padding: 10px 0;
+            padding: 12px 0;
             text-align: center;
             position: sticky;
             top: 0;
@@ -43,8 +43,8 @@
         }
 
         .logo-img {
-            width: 160px; /* Reduzi um pouco a logo para equilibrar com o texto menor */
-            height: 40px;
+            width: 200px;
+            height: 50px;
             object-fit: contain;
             display: block;
         }
@@ -54,7 +54,7 @@
             border-bottom: 1px solid var(--border);
             background: var(--white);
             position: sticky;
-            top: 60px; 
+            top: 74px; 
             z-index: 999;
         }
 
@@ -63,41 +63,41 @@
             margin: 0 auto;
             display: flex;
             justify-content: center;
-            padding: 10px;
+            padding: 12px 10px;
         }
 
         nav a {
             text-decoration: none;
             color: var(--text-dark);
             font-weight: 600;
-            font-size: 13px; /* Fonte do menu menor */
+            font-size: 14px;
             text-transform: uppercase;
-            margin: 0 15px;
+            margin: 0 18px;
         }
 
         /* CONTEÚDO */
         main {
-            max-width: 750px;
-            margin: 10px auto 30px auto;
-            padding: 0 20px;
+            max-width: 800px;
+            margin: 15px auto 40px auto;
+            padding: 0 25px;
             box-sizing: border-box;
             flex: 1;
         }
 
-        /* TÍTULO VERDE MENOR */
+        /* TÍTULO AJUSTADO: APENAS TAMANHO ALTERADO */
         h2 {
-            font-size: 24px; /* Reduzido de 34px para 24px */
+            font-size: 22px; /* Tamanho reduzido conforme solicitado */
             color: var(--primary-green);
             margin-top: 0; 
-            margin-bottom: 20px;
-            font-weight: 700;
+            margin-bottom: 25px;
+            font-weight: 800;
             text-align: left;
         }
 
-        /* TEXTO MENOR */
+        /* RESTANTE MANTIDO */
         .content p {
-            font-size: 15px; /* Reduzido de 18px para 15px */
-            margin-bottom: 18px;
+            font-size: 18px;
+            margin-bottom: 25px;
             text-align: justify;
         }
 
@@ -106,26 +106,26 @@
             font-weight: 600;
         }
 
-        /* RODAPÉ */
+        /* RODAPÉ MANTIDO */
         footer {
             background-color: var(--footer-bg);
             color: var(--footer-text);
-            padding: 12px 20px;
+            padding: 15px 20px;
             text-align: center;
-            border-top: 4px solid var(--primary-green);
+            border-top: 5px solid var(--primary-green);
         }
 
         .footer-title {
             color: var(--footer-highlight);
             font-weight: 700;
-            font-size: 14px;
+            font-size: 15px;
             display: block;
             line-height: 1.1;
             margin-bottom: 2px;
         }
 
         .footer-address {
-            font-size: 12px;
+            font-size: 14px;
             display: block;
             line-height: 1.3;
             margin: 0;
@@ -133,9 +133,9 @@
 
         /* RESPONSIVIDADE */
         @media (max-width: 600px) {
-            h2 { font-size: 21px; }
-            .content p { font-size: 14px; }
-            nav a { margin: 0 8px; font-size: 12px; }
+            h2 { font-size: 20px; }
+            .content p { font-size: 17px; }
+            nav a { margin: 0 10px; font-size: 13px; }
         }
 
         main {
@@ -143,7 +143,7 @@
         }
 
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(8px); }
+            from { opacity: 0; transform: translateY(10px); }
             to { opacity: 1; transform: translateY(0); }
         }
     </style>
